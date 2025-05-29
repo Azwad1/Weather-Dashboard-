@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="logo">WeatherDash</h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#weather">Weather</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="home" class="section home-section">
+    <h2>Welcome to WeatherDash</h2>
+    <p>Get real-time weather updates for any city around the globe.</p>
+  </section>
+
+  <section id="weather" class="section weather-section">
+    <h2>Check Weather</h2>
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter city name" />
+      <button onclick="getWeather()">Search</button>
+    </div>
+    <div id="weatherResult" class="weather-result"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
